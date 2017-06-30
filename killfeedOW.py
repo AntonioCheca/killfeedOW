@@ -132,8 +132,7 @@ while(cap.isOpened() and ((last_frame == -1) or frame_count <= last_frame)):
 			log.add((undoMaps(name), pt[1], pt[0]))
 	
 	#Uncomment the next line if you want to see the speed of the program		
-	cv2.imshow('frame', frame[1:frame.shape[0],1:frame.shape[1]])
-	print frame_count
+	#cv2.imshow('frame', frame[1:frame.shape[0],1:frame.shape[1]])
 	teamfight = len(log) > 0
 	for l in log:
 		for l2 in log:
